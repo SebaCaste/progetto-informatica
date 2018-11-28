@@ -7,15 +7,17 @@ Stabilizzatore::Stabilizzatore(string _ma,int n){
 Stabilizzatore::~Stabilizzatore(){}
 
 void Stabilizzatore::stampa(){
-	
+	cout<<*this<<endl;
 }
 
 void test_stabilizzatore(){
 	Stabilizzatore s("ASUS", 3);
-	cout<<s;	
+	cout<<"con ostream "<<s<<endl;	
+	cout<<"con stampa ";s.stampa();
 }
 
 ostream& operator<<(ostream& os,Stabilizzatore s){
-	cout<<"Stabilizzatore ::"<<s.marca<<" con "<<s.nAssi<<endl;
+	os<<"Stabilizzatore ::"<<s.marca<<" con "<<s.nAssi;
+	return os;
 }
 

@@ -15,26 +15,21 @@ Memoria::~Memoria(){
 }
 
 void Memoria::stampa(){
-	cout<<"Memoria:: "<<capacita<<"Gb - ";
-	switch(tipo){
-		case usb: cout<<" USB ";break;
-		case sd: cout<<" SD ";break;
-		case microSd: cout<<" micro sd ";break;	
-	}
-	cout<<endl;
+	cout<<*this<<endl;
 }
 
 void test_memoria(){
 	Memoria mem(32,usb);
 	mem.stampa();
+	cout<<mem<<endl;
 }
 
 ostream& operator<<(ostream& os,Memoria m){
-	cout<<"Memoria:: "<<m.capacita<<"Gb - ";
+	os<<m.capacita<<"Gb - ";
 	switch(m.tipo){
-		case usb: cout<<" USB ";break;
-		case sd: cout<<" SD ";break;
-		case microSd: cout<<" micro sd ";break;	
+		case usb: os<<" USB ";break;
+		case sd: os<<" SD ";break;
+		case microSd: os<<" micro sd ";break;	
 	}
-	cout<<endl;
+	return os;
 }
