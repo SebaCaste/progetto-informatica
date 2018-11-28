@@ -1,3 +1,6 @@
+
+// MEMORIA FINITO
+
 #ifndef _MEMORIA_
 #define _MEMORIA_
 enum TipoMemoria{usb,sd,microSd};

@@ -1,3 +1,6 @@
+
+//MEMORIA FINITO
+
 #include "memoria.h"
 using namespace std;
 #include <iostream>
@@ -5,14 +8,6 @@ using namespace std;
 
 Memoria::Memoria(int _cap,TipoMemoria _tipo){
 	capacita=_cap;
-	switch(_tipo){
-		case('usb'): ;break;
-		case('USB'): cout<<" USB ";break;
-		case('SD'): cout<<" SD ";break;
-		case('sd'): cout<<" SD ";break;
-		case('microusb'): cout<<" micro USB ";break;
-		case('MICROUSB'): cout<<" micro USB ";break;		
-	}
 	tipo=_tipo;	
 }
 Memoria::~Memoria(){
@@ -22,12 +17,9 @@ Memoria::~Memoria(){
 void Memoria::stampa(){
 	cout<<"Memoria:: "<<capacita<<"Gb - ";
 	switch(tipo){
-		case('usb'): cout<<" USB ";break;
-		case('USB'): cout<<" USB ";break;
-		case('SD'): cout<<" SD ";break;
-		case('sd'): cout<<" SD ";break;
-		case('microusb'): cout<<" micro USB ";break;
-		case('MICROUSB'): cout<<" micro USB ";break;		
+		case usb: cout<<" USB ";break;
+		case sd: cout<<" SD ";break;
+		case microSd: cout<<" micro sd ";break;	
 	}
 	cout<<endl;
 }
