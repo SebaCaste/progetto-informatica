@@ -28,3 +28,13 @@ void test_memoria(){
 	Memoria mem(32,usb);
 	mem.stampa();
 }
+
+ostream& operator<<(ostream& os,Memoria m){
+	cout<<"Memoria:: "<<m.capacita<<"Gb - ";
+	switch(m.tipo){
+		case usb: cout<<" USB ";break;
+		case sd: cout<<" SD ";break;
+		case microSd: cout<<" micro sd ";break;	
+	}
+	cout<<endl;
+}
