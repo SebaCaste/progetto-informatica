@@ -13,7 +13,12 @@ void Report::set_report(int _g,int _m,int _a,int _nFoto,int _mem){
 	nFoto=_nFoto;
 	memoria=_mem;
 }
+void test_report(){
+	Report re;
+	re.set_report(28,11,2018,156,1024);
+	re.stampa();
+}
 ostream& operator<<(ostream& os,Report r){
-	os<<"#foto"<<r.nFoto<<"gigabite: "<<r.memoria<<endl;
+	os<<"#foto :"<<r.nFoto<<" gigabite :"<<r.memoria<<endl;
 	return os;
 }
