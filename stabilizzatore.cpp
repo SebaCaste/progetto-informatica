@@ -17,7 +17,7 @@ void test_stabilizzatore(){
 }
 
 ostream& operator<<(ostream& os,Stabilizzatore s){
-	os<<"Stabilizzatore ::"<<s.marca<<" con "<<s.nAssi;
+	os<<"Stabilizzatore :"<<s.marca<<" con "<<s.nAssi;
 	return os;
 }
 

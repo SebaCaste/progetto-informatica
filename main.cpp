@@ -1,7 +1,5 @@
 #include <iostream>
-#include "memoria.h"
-#include "stabilizzatore.h"
-#include "cavalletto.h"
+#include "accessori.h"
 #include "data.h"
 #include "report.h"
 #include "accessori.h"
@@ -15,5 +13,6 @@ int main(int argc, char** argv) {
 //	test_cavalletto();
 //	test_data();
 //	test_report();
+	test_accessori();
 	return 0;
 }
