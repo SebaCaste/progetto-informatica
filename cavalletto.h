@@ -9,10 +9,11 @@ class Cavalletto{
 		string marca;
 		string materiale;
 	public:
-		Cavalletto(string _mar,string _mat);
+		Cavalletto(string _mar="null",string _mat="null");
 		~Cavalletto();
 		void stampa();
-		friend ostream& operator<<(ostream& os,Cavalletto c);		
+		friend ostream& operator<<(ostream& os,Cavalletto c);	
+		void set_cavalletto(string _mar,string _mat);
 };
 
 ostream& operator<<(ostream& os,Cavalletto c);

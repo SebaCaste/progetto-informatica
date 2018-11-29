@@ -9,8 +9,9 @@ class Stabilizzatore{
 		string marca;
 		int nAssi;
 	public:
-		Stabilizzatore(string _ma,int n);
+		Stabilizzatore(string _ma="null",int n=0);
 		~Stabilizzatore();
+		void set_stabilizzatore(string _mar,int _nA);
 		void stampa();
 		friend ostream& operator<<(ostream& os,Stabilizzatore s);	
 };

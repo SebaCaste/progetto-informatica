@@ -9,6 +9,10 @@ Stabilizzatore::~Stabilizzatore(){}
 void Stabilizzatore::stampa(){
 	cout<<*this<<endl;
 }
+void Stabilizzatore::set_stabilizzatore(string _mar,int _nA){
+	marca=_mar;
+	nAssi=_nA;
+}
 
 void test_stabilizzatore(){
 	Stabilizzatore s("ASUS", 3);

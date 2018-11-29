@@ -1,10 +1,40 @@
-#include "accessori.h
+#include "accessori.h"
 
 Accessori::Accessori(){
 }
-Accessori::~Accessori();
-void Accessori::stampa();
-ostream& operator<<(ostream& os, Accessori a);
+Accessori::~Accessori(){
+}
+void Accessori::add_cavalletto(string _marca,string _materiale){
+		if(c<2){
+		cavalletto[c].set_cavalletto(_marca,_materiale);
+	}
+	else{
+		cout<<"hai troppi cavalletti "<<endl;
+	}
+}
+void Accessori::add_stabilizzatore(string _marca,int _nAssi){
+		if(s<2){
+		stabilizzatore[c].set_stabilizzatore(_marca,_nAssi);
+	}
+	else{
+		cout<<"hai troppi stabilizzatori "<<endl;
+	}
+}
+void Accessori::add_memoria(int _cap,TipoMemoria _ti){
+	if(m<5){
+		memoria[m].set_memoria(_cap,_ti);
+		m++;
+	}
+	else{
+		cout<<"hai troppe memorie "<<endl;
+	}
+}
+
+void Accessori::stampa(){
+	cout<<*this;
+}
+ostream& operator<<(ostream& os, Accessori a){
+}
 
 
 
