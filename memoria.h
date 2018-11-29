@@ -17,7 +17,6 @@ class Memoria{
 		Memoria(int _cap=0,TipoMemoria _tipo=usb);
 		~Memoria();
 		void stampa();
-		void set_memoria(int _capacita,TipoMemoria _tipo);
 		friend ostream& operator<<(ostream& os,Memoria m);
 };
 

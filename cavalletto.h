@@ -13,7 +13,7 @@ class Cavalletto{
 		~Cavalletto();
 		void stampa();
 		friend ostream& operator<<(ostream& os,Cavalletto c);	
-		void set_cavalletto(string _mar,string _mat);
+		
 };
 
 ostream& operator<<(ostream& os,Cavalletto c);

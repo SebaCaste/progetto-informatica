@@ -11,7 +11,6 @@ class Stabilizzatore{
 	public:
 		Stabilizzatore(string _ma="null",int n=0);
 		~Stabilizzatore();
-		void set_stabilizzatore(string _mar,int _nA);
 		void stampa();
 		friend ostream& operator<<(ostream& os,Stabilizzatore s);	
 };

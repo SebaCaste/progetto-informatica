@@ -13,10 +13,7 @@ Memoria::Memoria(int _cap,TipoMemoria _tipo){
 Memoria::~Memoria(){
 
 }
-void Memoria:: set_memoria(int _capacita,TipoMemoria _tipo){
-	capacita=_capacita;
-	tipo=_tipo;
-}
+
 void Memoria::stampa(){
 	cout<<*this<<endl;
 }
